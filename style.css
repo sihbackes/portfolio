@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+* {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #F6FFF8;
+}
+ 
+/*header */
+@keyframes slide{
+ from{
+  opacity: 0;
+ }
+ to {
+  opacity: 1;
+  transform: translateX(0);
+ }
+}
+
+.banner-container {
+  padding: 4em;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  background-color: #A4C3B2;
+}
+.profilePhoto-container{
+text-align: center;
+background-color: #A4C3B2;
+}
+
+.welcomeText-container {
+  padding: 3em 0 0 0;
+  background-color: #A4C3B2;
+}
+
+#profilePhoto {
+transform: translateX(-10em);
+max-width: 16em;
+border-radius: 50%;
+animation-name: slide;
+animation-duration: 1.5s;
+animation-fill-mode: forwards;
+} 
+
+#welcomeText {
+  font-family: 'Exo', sans-serif;
+  font-weight: lighter;
+  font-size: 3.5em;
+  color: #EAF4F4;
+  background-color: #A4C3B2;
+  transform: translateX(10em);
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  
+}
+
+#welcomeText2 {
+  font-family: 'Exo', sans-serif;
+  font-weight: lighter;
+  font-size: 2.5em;
+  color: #EAF4F4;
+  background-color: #A4C3B2;
+  transform: translateX(10em);
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  
+
+}
+
+.aboutMe {
+ color: #6B9080; 
+ padding: 2em 14em 0 18em;
+ transform: translateY(-10em);
+ opacity: 0;
+ animation-name: slide;
+ animation-duration: 2s;
+ animation-fill-mode: forwards
+}
+
+.aboutMe h1{
+font-size: 1.5em;
+padding-bottom: 1em;
+}
+.aboutMe h2{
+  font-size: 1.2em;
+  }
