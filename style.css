@@ -1,44 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Inter', sans-serif;
 }
 
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
 .home{
-  display: grid;
-  grid-template-columns: 2fr 4fr;
+display: flex;
 }
 
-.sideBar{
+ .sideBar{
   background-color: rgb(145, 140, 140);
-  height: 50em;
-  display: block;
-  
-}
-
+  height: 100vh;
+  width: 30rem;
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
+ }
 
 #profilePhoto {
   border-radius: 50%;
-  display: block;
-  margin-top: 3em;
-  margin-left: auto;
-  margin-right: auto
+  max-width: 15rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-bottom: 1rem;
 }
 
-
-.mediaIcons ul li{
- display: inline;
- list-style: none;
-
+#welcomeText {
+  margin-left: 5rem;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: lighter;
 }
+
+#welcomeText2 {
+  margin-left: 5rem;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: lighter;
+  padding-bottom: 1rem;
+}  
+
+.mediaIcons {
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 1rem;
+}
+
 .mediaIcons ion-icon {
+  width: 2rem;
+  height: 2rem;
   color: #fff;
-  font-size: 30px;
-  padding-left: 14px;
-  padding-top: 5px;
   transition: 0.3s ease;
-  padding-top: 2em;
-  padding-bottom: 1em;
 }
 
 .mediaIcons ion-icon:hover {
@@ -46,7 +65,7 @@
 }
 
 .menu ul li{
-  margin-left: 0.5em;
+  margin-left: 4.5rem;
   list-style: none;
   color: #fff;
   font-size: 1.2em;
@@ -59,21 +78,33 @@
  color:black;
 }
 
-.banner {
-  background-color: rgb(238, 229, 217);
+
+.box {
+
+  background-color: rgb(112, 104, 104);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80vw;
+  margin: 0 0.5rem 2rem 0.5rem;
 }
 
-#welcomeText {
-  color: rgb(104, 99, 99);
-  font-size: 3em;
-  font-weight: lighter;
-  margin-top:3em;
-  margin-left: 3em;
+.thumbnail {
+  max-width: 8rem;
+  padding: 1rem;
+} 
+
+.aboutMe h1 {
+  padding: 2rem;
+}
+.aboutMe p {
+  margin-left: 2rem;
 }
 
-#welcomeText2 {
-  color: rgb(104, 99, 99);
-  font-size: 1.6em;
-  margin-left:5.8em;
-  font-weight: lighter;
+.projectsList h1 {
+  padding: 2rem;
+}
+
+.contact h1 {
+  padding: 2rem;  
 }
