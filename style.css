@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,32 +8,35 @@
 
 body {
   -webkit-font-smoothing: antialiased;
- background-color: rgba(255, 255, 255, 0.767);
+  background-color: white;
 }
 
 .background {
-  background-image: url(/img/background.jpg) ;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-color: #eebbc3;
   height: 230px;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
  }
+ 
+.helloWorld h1 {
+  padding: 2rem;
+  color: #121629;
+  font-Family: 'Nunito', Sans-Serif;
+  font-Size: 3rem;
+}
 
 .profilePhoto-container {
   display: flex;
   justify-content: center;
-  margin-top: -5rem;
+  margin-top: -7rem;
 }
 
 #profilePhoto{
-  border: 4px solid rgb(80, 80, 80);
+  border: 4px solid #58595c;
   border-radius: 50%;
-  max-width: 12rem;
+  max-width: 14rem;
   transition: 0.4s ease;
-}
-
-#profilePhoto:hover {
-  border: 4px solid rgb(158, 156, 156);
 }
 
 .infoName {
@@ -42,16 +45,20 @@ body {
 }
 
 #name {
-  color: rgb(80, 80, 80);
+  color: #58595c;
   font-size: 1.6rem;
-  font-weight: lighter;
+  Font-Family: 'Merriweather', Serif;
+  font-weight: normal;
+  margin-top: .5rem;
 }
 
+
 #front {
-  margin-left: 0.5rem;
-  color: rgb(80, 80, 80);
+  margin-left: 0.6rem;
+  color: #58595c;
   font-size: 1.1rem;
-  font-weight: lighter;
+  Font-Family: 'Muli', Sans-Serif;
+  font-weight: normal;
 }
 
 .mediaIcons {
@@ -62,12 +69,12 @@ body {
 .mediaIcons ion-icon {
   width: 2rem;
   height: 2rem;
-  color: rgb(80, 80, 80);
+  color: #58595c;
   transition: 0.3s ease;
 }
 
 .mediaIcons ion-icon:hover {
- color: rgb(158, 156, 156);
+ color: #a9abb1;
 }
 
 .mediaIcons {
@@ -83,14 +90,15 @@ body {
 }
 
 .myProjectsTitle {
-  width: 54rem;
+  width: 55rem;
   display: flex;
 }
 
 .myProjectsTitle h1{
-  color: rgb(80, 80, 80);
-  font-size: 1.6rem;
-  font-weight: lighter
+  color: #58595c;
+  font-size: 1.3rem;
+  font-Family: 'Merriweather', Serif;
+  font-weight: normal;
 }
 
 .boxProjects  {
@@ -100,31 +108,108 @@ body {
 }
 
 .projects {
-  max-width: 54rem;
+  max-width: 56rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .thumbnail {
- width: 24.9rem;
- height: 12.5rem;
+ width: 27rem;
+ height: 13rem;
 }
 
 .projectItem {
-border: 1px solid rgb(173, 172, 172);
-max-width: 25rem;
-margin: 0 1rem 2rem 0;
+box-shadow: rgb(0 0 0 / 20%) 0 3px 5px -1px, rgb(0 0 0 / 14%) 0 6px 10px 0, rgb(0 0 0 / 12%) 0 1px 18px 0;
+max-width: 27rem;
+margin: .5rem;
 }
 
 .projectItem h1 {
-  color: rgb(80, 80, 80);
-  font-size: 1.6rem;
-  font-weight: lighter; 
+  color: #58595c;
+  font-size: 1.4rem;
+  padding: .5rem;
+  justify-content: center;
+  margin-left: 1rem;
+  Font-Family: 'Merriweather', Serif;
+  font-weight: normal;
+}
+.projectItem h2 {
+  color: #58595c;
+  font-size: 1rem;
+  padding: .5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  Font-Family: 'Muli', Sans-Serif;
+  font-weight: normal;
 }
 
-.projectItem h2 {
-  margin-left: 0.5rem;
-  color: rgb(80, 80, 80);
+.btnBox {
+  display: flex;
+  justify-content: right;
+}
+
+.button {
+  background-color: #eebbc3;
+  border-radius: 12px;
+  border-style: none;
+  box-shadow: rgb(0 0 0 / 20%) 0 3px 5px -1px, rgb(0 0 0 / 14%) 0 6px 10px 0, rgb(0 0 0 / 12%) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #232946;
+  cursor: pointer;
   font-size: .9rem;
-  font-weight: lighter; 
+  height: 48px;
+  max-width: 100%;
+  padding: .8rem .8rem;
+  margin: 1rem 1rem;
+  text-align: center;
+  width: auto;
+  Font-Family: 'Merriweather', Serif;
+}
+
+.aboutMeTitleBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.aboutMeTitle {
+  width: 55rem;
+  display: flex;
+}
+
+.aboutMeTitle h1{
+  color: #58595c;
+  font-size: 1.3rem;
+  font-Family: 'Merriweather', Serif;
+  font-weight: normal;
+  margin: 2rem 0 2rem 0;
+}
+
+.aboutMeTextBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutMeText {
+  padding: 1.5rem;
+  width: 55rem;
+  display: flex;
+  box-shadow: rgb(0 0 0 / 20%) 0 3px 5px -1px, rgb(0 0 0 / 14%) 0 6px 10px 0, rgb(0 0 0 / 12%) 0 1px 18px 0;
+}
+
+.aboutMeText p{
+  color: #58595c;
+  font-size: 1.3rem;
+  Font-Family: 'Muli', Sans-Serif;
+  font-weight: normal;
+  margin-bottom: 6rem;
+}
+
+.footerBox {
+  margin-top: 5rem;
+  height: 1rem;
+  background-color: violet;
 }
