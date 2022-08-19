@@ -21,10 +21,22 @@ body {
  
 .helloWorld h1 {
   padding: 2rem;
-  color: #121629;
+  color: #58595c;
   font-Family: 'Nunito', Sans-Serif;
   font-Size: 3rem;
 }
+
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
 
 .profilePhoto-container {
   display: flex;
@@ -191,6 +203,7 @@ margin: .5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 3rem;
 }
 
 .aboutMeText {
@@ -202,10 +215,9 @@ margin: .5rem;
 
 .aboutMeText p{
   color: #58595c;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   Font-Family: 'Muli', Sans-Serif;
   font-weight: normal;
-  margin-bottom: 6rem;
 }
 
 .footerBox {
