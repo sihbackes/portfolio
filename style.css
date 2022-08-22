@@ -95,6 +95,47 @@ span {
   margin-top: 1rem;
 }
 
+.aboutMeTitleBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.aboutMeTitle {
+  width: 55rem;
+  display: flex;
+}
+
+.aboutMeTitle h1{
+  color: #58595c;
+  font-size: 1.3rem;
+  font-Family: 'Merriweather', Serif;
+  font-weight: normal;
+  margin: 2rem 0 2rem 0;
+}
+
+.aboutMeTextBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.aboutMeText {
+  padding: 1.5rem;
+  width: 55rem;
+  display: flex;
+  box-shadow: rgb(0 0 0 / 20%) 0 3px 5px -1px, rgb(0 0 0 / 14%) 0 6px 10px 0, rgb(0 0 0 / 12%) 0 1px 18px 0;
+}
+
+.aboutMeText p{
+  color: #58595c;
+  font-size: 1.1rem;
+  Font-Family: 'Muli', Sans-Serif;
+  font-weight: normal;
+}
+
 .myProjectsTitleBox {
   display: flex;
   align-items: center;
@@ -111,6 +152,7 @@ span {
   font-size: 1.3rem;
   font-Family: 'Merriweather', Serif;
   font-weight: normal;
+  margin: 2rem 0 2rem 0;
 }
 
 .boxProjects  {
@@ -179,49 +221,102 @@ margin: .5rem;
   Font-Family: 'Merriweather', Serif;
 }
 
-.aboutMeTitleBox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.aboutMeTitle {
-  width: 55rem;
-  display: flex;
-}
-
-.aboutMeTitle h1{
-  color: #58595c;
-  font-size: 1.3rem;
-  font-Family: 'Merriweather', Serif;
-  font-weight: normal;
-  margin: 2rem 0 2rem 0;
-}
-
-.aboutMeTextBox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 3rem;
-}
-
-.aboutMeText {
-  padding: 1.5rem;
-  width: 55rem;
-  display: flex;
-  box-shadow: rgb(0 0 0 / 20%) 0 3px 5px -1px, rgb(0 0 0 / 14%) 0 6px 10px 0, rgb(0 0 0 / 12%) 0 1px 18px 0;
-}
-
-.aboutMeText p{
-  color: #58595c;
-  font-size: 1.1rem;
-  Font-Family: 'Muli', Sans-Serif;
-  font-weight: normal;
-}
 
 .footerBox {
   margin-top: 5rem;
   height: 1rem;
   background-color: violet;
 }
+
+
+@media (max-width: 480px) {
+  .background {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+   }
+   
+  .helloWorld h1 {
+    font-Size: 1.5rem;
+  }
+
+.aboutMeTitle {
+  width: 21rem;
+}
+
+.aboutMeTitle h1{
+  margin: 1rem 0 1rem 1rem;
+}
+
+.aboutMeText {
+  width: 21rem;
+}
+
+.projectItem {
+  max-width: 21rem;
+  }
+
+.thumbnail {
+  width: 21rem;
+  height: 13rem;
+ }
+ .myProjectsTitle {
+  width: 21rem;
+}
+
+.myProjectsTitle h1 {
+  margin: 1rem 0 1rem 1rem;
+}
+}
+
+@media (max-width: 820px) {
+ 
+  .helloWorld h1 {
+    font-Size: 1.5rem;
+  }
+  .aboutMeTitle {
+    width: 50rem;
+  }
+  .aboutMeTitle h1{
+    margin: 1rem 0 1rem 1rem;
+  }
+  
+  .aboutMeText {
+    width: 48rem;
+  }
+
+  .myProjectsTitle {
+    width: 50rem;
+  }
+  .myProjectsTitle h1 {
+    margin: 1rem 0 1rem 1rem;
+    
+  }
+  .projectItem {
+    max-width: 24rem;
+    }
+  
+  .thumbnail {
+    width: 24rem;
+    height: 13rem;
+   }
+
+
+}
+
+@media (max-width: 768px) {
+  .helloWorld h1 {
+    font-Size: 1.2rem;
+  }
+  .projectItem {
+    max-width: 23rem;
+    }
+  
+  .thumbnail {
+    width: 23rem;
+    height: 13rem;
+   }
+
+}
+
